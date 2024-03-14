@@ -1,0 +1,22 @@
+name: Update Resource Pack
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name if needed
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create ZIP file
+        run: zip -r resource-pack.zip https://www.dropbox.com/scl/fi/kkb5e7bzsshl9tmpddqdk/resources.zip?rlkey=h6xjmf7scibqhyhs49jyasajt&dl=1
+
+      - name: Upload ZIP to web server
+        uses: actions/upload-artifact@v2
+        with:
+          name: resource-pack
+          path: resource-pack.zip
