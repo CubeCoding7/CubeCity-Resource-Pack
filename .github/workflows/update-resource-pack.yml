@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create ZIP file
-        run: zip -r resource-pack.zip https://www.dropbox.com/scl/fo/vg5bxpcpklxlgc5wx0k4w/h?rlkey=hhs1mf0crvmmk1tj41qd7o8rf&dl=0
+        run: zip -r resource-pack.zip https://www.dropbox.com/scl/fi/kkb5e7bzsshl9tmpddqdk/resources.zip?rlkey=h6xjmf7scibqhyhs49jyasajt&dl=0
 
       - name: Upload ZIP to web server
         uses: actions/upload-artifact@v2
