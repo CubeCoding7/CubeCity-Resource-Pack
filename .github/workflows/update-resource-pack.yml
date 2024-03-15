@@ -48,3 +48,12 @@ jobs:
         asset_path: ${{ github.workspace }}/${{ env.ZIP_NAME }}
         asset_name: ${{ env.ZIP_NAME }}
         asset_content_type: application/zip
+
+    - name: Send RCON Command
+      uses: Plagiatus/RCON-Action@v0.2.0
+      with:
+        server: ${{ secrets.SERVER_IP }}
+        port: ${{ secrets.RCON_PORT }}
+        password: ${{ secrets.RCON_PASSWORD }}
+        commands: '["say hi", "reload"]'
+      
