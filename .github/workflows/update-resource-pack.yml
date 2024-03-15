@@ -1,10 +1,10 @@
 name: Resourcepack Zipper
 
 on:
-  workflow_dispatch
-  # push:
-  #   branches:
-  #     - main  # Adjust this branch name if needed
+  # workflow_dispatch
+  push:
+    branches:
+      - main  # Adjust this branch name if needed
 
 jobs:
   build:
