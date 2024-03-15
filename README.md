@@ -1,1 +1,1 @@
-Leave notes here
+Resource Pack for the CubeCity Minecraft Server
