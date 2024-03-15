@@ -55,5 +55,5 @@ jobs:
         server: ${{ secrets.SERVER_IP }}
         port: ${{ secrets.RCON_PORT }}
         password: ${{ secrets.RCON_PASSWORD }}
-        commands: '["say hi", "reload"]'
+        commands: '["say hi", "and bye"]'
       
