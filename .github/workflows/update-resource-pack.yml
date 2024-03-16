@@ -33,8 +33,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
       with:
-        tag_name: release-${{ github.sha }}
-        release_name: Release ${{ github.sha }}
+        tag_name: release-${{ github.sha }}-${{ github.run_number }}
+        release_name: Release-${{ github.sha }}-${{ github.run_number }}
         draft: false
         prerelease: false
 
