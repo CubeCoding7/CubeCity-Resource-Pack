@@ -33,8 +33,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
       with:
-        tag_name: release-${{ github.sha }}-${{ github.run_number }}
-        release_name: Release-${{ github.sha }}-${{ github.run_number }}
+        tag_name: release-${{ github.run_number }}
+        release_name: Release-${{ github.run_number }}
         draft: false
         prerelease: false
 
@@ -55,5 +55,5 @@ jobs:
         server: ${{ secrets.SERVER_IP }}
         port: ${{ secrets.RCON_PORT }}
         password: ${{ secrets.RCON_PASSWORD }}
-        commands: '["say hi", "reload"]'
+        commands: '["say new resourcepack is ready, please reconnect", "reload"]'
       
